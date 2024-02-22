@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.3(Feb 23, 2024)
+* Added support for Unreal 5.2
+
 ### v3.1.2 (Sep 29, 2022)
 * Improved stability regarding server responses.
 
