@@ -22,10 +22,6 @@ Find out more about the Sendbird Chat SDK for Unreal in the [Sendbird Unreal Doc
 
 Please verify the following prerequisites before getting started with the Sendbird Chat SDK for Unreal.
 
-### Requirements
-
-- `UE_4.27 (default)` or `UE_4.26`
-
 ### Supported Platforms
 
 - `Android`, `iOS`, `Windows`, `Mac`
@@ -53,7 +49,7 @@ Regardless of the platform, only one Sendbird application can be integrated per 
 
 **Note**: Chat data is limited to the scope of a single application. Users from different Sendbird applications are therefore unable to chat with each other. 
 
-### Step 2: Copy the `Sendbird` folder into the `Plugins` folder in your unreal project.
+### Step 2: Copy the `Sendbird` folder into the `Plugins_UE_version`(ex Plugins_UE_5.2) folder in your unreal project.
 
 ### Step 3: Add `Sendbird` the plugin in your *.uproject file.
 ```
