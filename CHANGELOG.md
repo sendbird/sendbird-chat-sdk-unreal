@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.4(Apr 9, 2024)
+* Added SendbirdChatPrivacyInfo.xcprivacy for Apple Privacy Manifest
+
 ### v3.1.3(Feb 23, 2024)
 * Added support for Unreal 5.2
 

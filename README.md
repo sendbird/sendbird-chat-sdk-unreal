@@ -79,3 +79,6 @@ PrivateDependencyModuleNames.AddRange(new string[] { "OpenSSL", "Sendbird" });
 - After invoking `SBDMain::Disconnect([]() {})`, SDK functions and objects must not be used.
 - You can use `SBDMain::GetCurrentUser()` to check if the SDK is available after disconnecting.
 - `SBDError` object must be used in the invoked function.
+
+## Support Apple Privacy manifest
+Add the contents of the SendbirdChatPrivacyInfo.xcprivacy file to the project's PrivacyInfo.xcprivacy.
