@@ -310,6 +310,11 @@ public:
 	 */
 	bool is_open_channel;
 
+    /**
+	 * Whether the channel is ephemeral.
+	 */
+    bool is_ephemeral;
+
 	/**
 	 * Sends a user message with <span>params</span>.
 	 *

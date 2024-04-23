@@ -38,6 +38,14 @@ public:
 	 */
 	SBDOpenChannelParams& SetName(std::wstring name);
 
+    /**
+    * Sets Is_ephemeral.
+    * The default value is false.
+    *
+    * @param is_ephemeral The ephemeral mode of the channel.
+    * @since 3.1.5
+    */
+    SBDOpenChannelParams& SetEphemeral(bool is_ephemeral);
 	/**
 	 * Sets channel_url.
 	 * 
@@ -98,6 +106,7 @@ public:
 private:
 	std::wstring name;
 	std::wstring channel_url;
+    bool is_ephemeral;
 
 	// (cover_url) or (cover_image_file_path & file_mime_type)
 	std::wstring cover_url;

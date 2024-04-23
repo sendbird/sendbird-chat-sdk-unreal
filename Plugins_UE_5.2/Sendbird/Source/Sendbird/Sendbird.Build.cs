@@ -33,27 +33,6 @@ public class Sendbird : ModuleRules
                 PublicAdditionalLibraries.Add(arm64_v8aPath);
             }
 
-            string armeabi_v7aPath = Path.Combine(ModuleDirectory, "lib", "android", "armeabi-v7a", "libSendbirdChat.so");
-            if (File.Exists(armeabi_v7aPath))
-            {
-                isLibrarySupported = true;
-                PublicAdditionalLibraries.Add(armeabi_v7aPath);
-            }
-
-            string x86Path = Path.Combine(ModuleDirectory, "lib", "android", "x86", "libSendbirdChat.so");
-            if (File.Exists(x86Path))
-            {
-                isLibrarySupported = true;
-                PublicAdditionalLibraries.Add(x86Path);
-            }
-
-            string x86_64Path = Path.Combine(ModuleDirectory, "lib", "android", "x86_64", "libSendbirdChat.so");
-            if (File.Exists(x86_64Path))
-            {
-                isLibrarySupported = true;
-                PublicAdditionalLibraries.Add(x86_64Path);
-            }
-
             string BuildPath = Utils.MakePathRelativeTo(ModuleDirectory, Target.RelativeEnginePath);
             AdditionalPropertiesForReceipt.Add("AndroidPlugin", Path.Combine(BuildPath, "Sendbird_UPL.xml"));
         }
