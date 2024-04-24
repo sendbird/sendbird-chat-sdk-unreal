@@ -66,6 +66,15 @@ public:
 	 */
 	SBDGroupChannelParams& SetPublic(bool is_public);
 
+    /**
+     * Sets Is_ephemeral.
+     * The default value is false.
+     *
+     * @param is_ephemeral The ephemeral mode of the channel.
+     * @since 3.1.5
+     */
+    SBDGroupChannelParams& SetEphemeral(bool is_ephemeral);
+
 	/**
 	 * Sets channel_url.
 	 * 
@@ -128,6 +137,7 @@ private:
 	std::wstring name;
 	bool is_distinct;
 	bool is_public;
+    bool is_ephemeral;
 	std::wstring channel_url;
 
 	// (cover_url) or (cover_image_file_path & file_mime_type)

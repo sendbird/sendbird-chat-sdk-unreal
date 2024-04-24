@@ -216,10 +216,10 @@ public:
 private:
 	std::mutex operators_lock;
 	int64_t operators_updated_at;
-	static std::vector<std::unique_ptr<SBDOpenChannelListQuery>> open_channel_list_queries;
+	static std::vector<std::unique_ptr<SBDOpenChannelListQuery> > open_channel_list_queries;
 	static std::vector<std::unique_ptr<SBDUserListQuery>> user_list_queries;
-	static std::map<std::wstring, std::shared_ptr<SBDOpenChannel>> cached_channels;
-	static std::map<std::wstring, std::shared_ptr<SBDOpenChannel>> entered_channels;
+    static std::map<std::wstring, std::shared_ptr<SBDOpenChannel> > cached_channels;
+    static std::map<std::wstring, std::shared_ptr<SBDOpenChannel> > entered_channels;
 	static std::mutex cached_channels_mutex;
 
 	SBDOpenChannel(const std::string& dict);

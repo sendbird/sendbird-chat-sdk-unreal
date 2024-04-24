@@ -215,6 +215,16 @@ public:
 	 */
 	static void Connect(std::wstring user_id, std::wstring access_token, std::function<void(SBDUser*, SBDError*)> completion_handler);
 
+    /**
+     * Performs a connection to Sendbird with the user ID and the access token.
+     *
+     * @param user_id            The user ID.
+     * @param access_token       The access token. If the user doesn't have access token, set nil.
+     * @param api_host           The apiHost.
+     * @param ws_host            The wsHost.
+     * @param completion_handler The handler interface to execute. `user` is the object to represent the current user.
+     */
+    static void Connect(std::wstring user_id, std::wstring access_token, std::wstring api_host, std::wstring ws_host, std::function<void(SBDUser*, SBDError*)> completion_handler);
 	/**
 	 * Disconnects from Sendbird. If this method is invoked, the current user will be invalidated.
 	 *
@@ -503,8 +513,6 @@ private:
 	static void SetReconnectTimer(unsigned long time_interval);
 	static void StopReconnectTimer();
 
-	static void Connect(std::wstring user_id, std::wstring access_token, std::wstring api_host, std::wstring ws_host,
-		std::function<void(SBDUser*, SBDError*)> completion_handler);
 	static void ProcessConnectCallbacks(SBDUser* user, SBDError* error);
 	static void ProcessDisconnectCallbacks(bool logout);
 	static std::wstring GetPlatformName();
