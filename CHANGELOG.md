@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.6(May 27, 2024)
+* Added support for the Android x86_64 library
+
 ### v3.1.5(Apr 24, 2024)
 * Added Ephemeral feature
   - Added `SetEphemeral(bool is_ephemeral)` in SBDGroupChannelParams
