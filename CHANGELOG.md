@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.7(Jul 3, 2024)
+* Fixed crash when parsing JSON
+
 ### v3.1.6(May 27, 2024)
 * Added support for the Android x86_64 library
 
