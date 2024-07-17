@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.1.8(Jul 17, 2024)
+* Improved stability
+* Updated Boost library
+
 ### v3.1.7(Jul 3, 2024)
 * Fixed crash when parsing JSON
 
