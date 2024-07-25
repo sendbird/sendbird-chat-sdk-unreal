@@ -28,17 +28,6 @@
 #include "SBDUserMessage.h"
 #include "SBDUserMessageParams.h"
 
-#include <string>
-#include <sstream>
-#include <ctime>
-#include <map>
-#include <cstdio>
-#include <memory>
-#include <mutex>
-#include <condition_variable>
-#include <codecvt>
-#include <exception>
-
 #define SBD_NULL_STRING "SBD_NULL_STRING_f2648f84e7e941208c8d9df02230a7c8"
 #define SBD_NULL_WSTRING L"SBD_NULL_STRING_f2648f84e7e941208c8d9df02230a7c8"
 #define IsNullString(str) (((str).compare(SBD_NULL_STRING)) == 0)

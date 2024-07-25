@@ -15,6 +15,7 @@
 
 #include <mutex>
 #include <queue>
+#include <functional>
 
 class SBDPreviousMessageListQuery;
 class SBDThumbnailSize;

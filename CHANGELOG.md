@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.9(Jul 25, 2024)
+* Removed duplicate definitions and unused declarations
+
 ### v3.1.8(Jul 17, 2024)
 * Improved stability
 * Updated Boost library
