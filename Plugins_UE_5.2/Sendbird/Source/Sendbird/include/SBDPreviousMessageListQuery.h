@@ -4,6 +4,7 @@
 #define SENDBIRD_SBDPREVIOUSMESSAGELISTQUERY_H_
 
 #include "SBDBaseChannel.h"
+#include <functional>
 
 class FSBDPreviousMessageListQuery;
 

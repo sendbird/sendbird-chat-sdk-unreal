@@ -97,9 +97,6 @@ public class Sendbird : ModuleRules
         if (isLibrarySupported)
         {
             PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
-
-            bUseRTTI = true;
-            bEnableExceptions = true;
         }
 
         PublicDefinitions.Add(string.Format("WITH_SENDBIRD={0}", isLibrarySupported ? 1 : 0));
