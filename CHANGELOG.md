@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.1.10(Aug 2, 2024)
+* Fixed crash issue during reconnect
+* Fixed crash issue in `UpdateReadReceipt`
+
 ### v3.1.9(Jul 25, 2024)
 * Removed duplicate definitions and unused declarations
 

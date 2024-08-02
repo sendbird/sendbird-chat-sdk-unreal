@@ -391,6 +391,8 @@ public:
      */
     static void UnregisterPushTokenAllForCurrentUser(std::function<void(SBDError*)> completion_handler);
 
+    static void SetLogHandler(std::function<void(const char *inLog)> log_handler);
+
 private:
 	std::wstring application_id;
 	SBDUser current_user;
