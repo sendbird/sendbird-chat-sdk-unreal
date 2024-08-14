@@ -53,6 +53,7 @@ public:
 
 private:
 	SBDUserMessage(const std::string& dict);
+    ~SBDUserMessage() override;
 	void SetSender(const SBDUser& sender);
 	void Overwrite(SBDUserMessage* message);
 

@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.11(Aug 14, 2024)
+* Fixed crash issue in `DeallocateAllMessages`
+
 ### v3.1.10(Aug 2, 2024)
 * Fixed crash issue during reconnect
 * Fixed crash issue in `UpdateReadReceipt`
