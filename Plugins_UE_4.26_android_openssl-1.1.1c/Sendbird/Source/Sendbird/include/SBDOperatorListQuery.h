@@ -4,9 +4,8 @@
 #define SENDBIRD_SBDOPERATORLISTQUERY_H_
 
 #include "SBDUser.h"
-
-#include <functional>
 #include <vector>
+#include <functional>
 
 class SBDBaseChannel;
 class SBDError;
