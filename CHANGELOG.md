@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.1.12 (2025-12-05)
+- Added Android 16KB page size support for UE 4.26 (`Plugins_UE_4.26`, `Plugins_UE_4.26_android_openssl-1.1.1c`)
+
 ### v3.1.11(Aug 14, 2024)
 * Fixed crash issue in `DeallocateAllMessages`
 
